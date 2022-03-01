@@ -39,7 +39,7 @@ function ConvertToDD(coord='', direction='', format='', debug=false) {
     var seconds = trim(coord.split('\'')[1].replace('\"', ''));
     var _minutes = minutes / 60;
     var _seconds = seconds / 3600;
-    var decimal = Math.round((_minutes + _seconds) * 100000) / 100000;  // // Keep 5 decimal digits.
+    var decimal = Math.round((_minutes + _seconds) * 100000) / 100000;  // Keep 5 decimal digits.
     var dd = degrees + decimal;
 
     if (debug === true) {
